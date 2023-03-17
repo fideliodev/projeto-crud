@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+<body>
+    <h1><%- title %></h1>
+    <%- include('partials/navbar.ejs') %>
+<% if(typeof message !== 'undefined') { %>
+    <%= message %>
+<%  } %>
+<form action="/edit/<%= user._id %>" method="POST">
+    <div>
+        <label>Nome</label>
+        <input type="text" name="name" placeholder="Nome" value="<%= user.name %>">
+    </div>
+    <div>
+        <label>Idade</label>
+        <input type="text" name="age" placeholder="Idade" value="<%= user.age %>">
+    </div>
+    <div>
+        <label>Email</label>
+        <input type="text" name="email" placeholder="email" value="<%= user.email %>">
+    </div>
+    <div>
+    </div>
+    <button type="submit">Editar</button>
+</form>
+    
+    <%- include('partials/foot.ejs') %>
+
+</body>
+</html>

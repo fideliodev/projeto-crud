@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+<body>
+    <h1 style="text-align: center;">Você esta na pagina : <%- title %></h1>
+    <%- include('partials/navbar.ejs') %>
+    <hr>
+    <h1>Usuarios cadastrados no banco de dados</h1>
+    <ul class="listUsersDb">
+        <% users.forEach((user) => { %>
+      <li>
+        <%= user.name %> - <%= user.email %> - <%= user.age %>
+    <a href="/edit?id=<%= user._id %> ">[editar]</a> -  
+    <a href="/remove/<%= user._id %> ">[remover]</a> -   
+ 
+    </li>
+
+        <%  }) %>
+        <h1>[quando clicar em remove, aperte f5]</h1>
+
+    </ul>
+    <%- include('partials/foot.ejs') %>
+
+</body>
+</html>

@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 body{
-    background: #fc8585;
+    background-color: rgb(255, 204, 0);
+    font-family: 'UnifrakturCook', cursive;    color: #fff;
 }
+
+.socialMedia{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 60vh;
+}
+
+.listUsersDb{
+    color: #000;
+    background-color: #fff;
+    font-family: 'Armata', sans-serif;
+
+    width: 600px;
+    padding: 20px;
+    border-radius: 9px;
+    list-style:none;
+    font-size: 13px;
+}
+
+input{
+    border-radius: 4px;
+    border: none;
+    padding: 14px;
+    margin: 10px;
+
+}
+
+button{
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: #d0cdcd;
+}
+
