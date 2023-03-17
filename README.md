@@ -1,5 +1,12 @@
 E ai!
 
+Rode na sua maquina
+
+* no terminal dentro do arquivo digite: npm run dev
+* digite no seu navegador: http://127.0.0.1:8080/
+
+
+
 Sobre o projeto:
 
 * Edite, remova e cadastre usuarios
