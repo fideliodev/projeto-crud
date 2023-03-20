@@ -1,10 +1,11 @@
 E ai!
 
 Baixe as dependencias
-
-* npm install nodemon --save-dev 
+* install node: https://nodejs.org/en/download/package-manager
 * npm install express mongoose
-* npm install bcrypt 
+* npm i ejs
+* npm install nodemon --save-dev
+* npm install bcrypt
 
 Rode na sua maquina
 
