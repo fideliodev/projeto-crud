@@ -1,5 +1,11 @@
 E ai!
 
+Baixe as dependencias
+
+* npm install nodemon --save-dev 
+* npm install express mongoose
+* npm install bcrypt 
+
 Rode na sua maquina
 
 * no terminal dentro do arquivo digite: npm run dev
